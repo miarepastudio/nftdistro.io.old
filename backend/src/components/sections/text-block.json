@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_elements_text_blocks",
+  "info": {
+    "displayName": "Text block",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "kicker": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.button-new"
+    }
+  }
+}

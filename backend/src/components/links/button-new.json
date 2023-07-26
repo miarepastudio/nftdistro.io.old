@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_links_button_news",
+  "info": {
+    "displayName": "Button new",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "link",
+        "modal"
+      ]
+    }
+  }
+}

@@ -13,12 +13,18 @@ interface NavLink {
 function NavLink({ url, text }: NavLink) {
   const path = usePathname();
 
+  const getActiveLink = () => {
+    const language = path.split('/')[1]
+    let pathWithLanguage = ''
+    return path === pathWithLanguage.concat(`/${language}`, url === '/' ? '' : url)
+  }
+
   return (
     <li className="flex">
       <Link
         href={url}
         className={`flex items-center mx-4 -mb-1 border-b-2 dark:border-transparent ${
-          path === url && "dark:text-violet-400 dark:border-violet-400"
+          getActiveLink() && "dark:text-violet-400 dark:border-violet-400"
         }}`}
       >
         {text}

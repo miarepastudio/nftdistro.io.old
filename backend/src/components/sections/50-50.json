@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_elements_50_50s",
+  "info": {
+    "displayName": "50/50",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "kicker": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.button-new"
+    },
+    "picture": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}
