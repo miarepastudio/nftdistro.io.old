@@ -20,7 +20,7 @@ export default function Header({
   logoText: string | null
 }) {
   return (
-    <div className="container relative z-10 mx-auto grid grid-cols-12 bg-white px-6 py-5 sm:px-0">
+    <div className="container relative z-10 mx-auto grid grid-cols-12  px-6 py-5 sm:px-0">
       <div className="col-span-12 flex items-center justify-between text-black  md:col-span-10 md:col-start-2">
         <div className="flex items-center gap-4 md:gap-20">
           <Logo src={logoUrl} />

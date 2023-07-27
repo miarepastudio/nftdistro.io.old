@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import './globals.css'
 import { getStrapiMedia, getStrapiURL } from './utils/api-helpers'
 import { fetchAPI } from './utils/fetch-api'
@@ -11,6 +12,7 @@ import { FALLBACK_SEO } from '@/app/[lang]/utils/constants'
 
 //new components
 import Header from './components/Header'
+import Backdrop from './components/Backdrop'
 
 async function getGlobal(): Promise<any> {
   const token = process.env.NEXT_PUBLIC_STRAPI_API_TOKEN
@@ -84,6 +86,8 @@ export default async function RootLayout({
           logoUrl={navbarLogoUrl}
           logoText={navbar.navbarLogo.logoText}
         /> */}
+
+        <Backdrop />
 
         <Header
           links={navbar.links}

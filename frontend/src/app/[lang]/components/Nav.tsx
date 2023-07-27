@@ -3,17 +3,9 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useEffect, useState, useRef } from 'react'
 import { clsx } from 'clsx'
+import { NavLinkInterface } from '../utils/interfaces'
 
-interface NavLink {
-  id: number
-  url: string
-  newTab: boolean
-  text: string
-  emoji: string
-  prefetch: boolean
-}
-
-export default function Nav({ links }: { links: Array<NavLink> }) {
+export default function Nav({ links }: NavLinkInterface[]) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const navRef = useRef(null)
 
@@ -51,7 +43,7 @@ export default function Nav({ links }: { links: Array<NavLink> }) {
       <NavButton isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       {/* desktop */}
       <ul className="hidden gap-14 lg:flex">
-        {links.map((item: NavLink) => (
+        {links.map((item: NavLinkInterface) => (
           <NavItem key={item.id} {...item} prefetch={true} />
         ))}
       </ul>
@@ -64,7 +56,7 @@ export default function Nav({ links }: { links: Array<NavLink> }) {
             : 'collapse top-0 opacity-0',
         )}
       >
-        {links.map((item: NavLink) => (
+        {links.map((item: NavLinkInterface) => (
           <NavItem key={item.id} {...item} prefetch={false} />
         ))}
       </ul>
@@ -72,7 +64,7 @@ export default function Nav({ links }: { links: Array<NavLink> }) {
   )
 }
 
-function NavItem({ url, text, emoji, prefetch }: NavLink) {
+function NavItem({ url, text, emoji, prefetch }: NavLinkInterface) {
   const path = usePathname()
 
   const getActiveLink = () => {

@@ -1,8 +1,11 @@
 export interface ButtonInterface {
   id: string
-  label: string
   type: string
+  label: string
+  color: string
   url: string
+  showIcon: boolean
+  selectIcon: string
   isModalOpen?: any
   setIsModalOpen?: any
 }
@@ -16,6 +19,15 @@ interface PictureInterface {
       alternativeText: string
     }
   }
+}
+
+export interface NavLinkInterface {
+  id: number
+  url: string
+  newTab: boolean
+  text: string
+  emoji: string
+  prefetch?: boolean
 }
 
 export interface TextBlockInterface {

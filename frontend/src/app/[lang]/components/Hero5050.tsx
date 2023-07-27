@@ -1,5 +1,5 @@
 'use client'
-import { useRef, useState } from 'react'
+import { useState } from 'react'
 import Image from 'next/image'
 import { getStrapiMedia } from '../utils/api-helpers'
 import { Hero5050 } from '../utils/interfaces'
@@ -15,8 +15,8 @@ export default function Hero5050({ data, modalTest }: Hero5050) {
 
   return (
     <>
-      <section className="pb-44 pt-10">
-        <div className="container mx-auto grid grid-cols-12 px-6 sm:px-0">
+      <section className="pb-10 pt-10 md:pb-44">
+        <div className="container mx-auto grid grid-cols-12 gap-y-12 px-6 sm:px-0">
           <div className="col-span-12 flex flex-col justify-center md:col-span-6">
             <TextBlock
               data={data}

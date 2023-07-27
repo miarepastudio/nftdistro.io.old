@@ -15,6 +15,26 @@
         "link",
         "modal"
       ]
+    },
+    "showIcon": {
+      "type": "boolean",
+      "default": false
+    },
+    "selectIcon": {
+      "type": "enumeration",
+      "enum": [
+        "wallet",
+        "ethereum"
+      ]
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "pink",
+        "blue",
+        "green"
+      ],
+      "default": "pink"
     }
   }
 }
