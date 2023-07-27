@@ -5,7 +5,12 @@ import { TextBlockInterface } from '../utils/interfaces'
 import { ButtonInterface } from '../utils/interfaces'
 import Button from './Button'
 
-export default function TextBlock({ data, headingTag }: TextBlockInterface) {
+export default function TextBlock({
+  data,
+  headingTag,
+  isModalOpen,
+  setIsModalOpen,
+}: TextBlockInterface) {
   const Tag = headingTag
 
   return (
@@ -22,7 +27,12 @@ export default function TextBlock({ data, headingTag }: TextBlockInterface) {
         remarkPlugins={[remarkGfm]}
       />
       {data.buttons.map((btn: ButtonInterface, index: number) => (
-        <Button {...btn} />
+        <Button
+          key={index}
+          {...btn}
+          isModalOpen={isModalOpen}
+          setIsModalOpen={setIsModalOpen}
+        />
       ))}
     </>
   )

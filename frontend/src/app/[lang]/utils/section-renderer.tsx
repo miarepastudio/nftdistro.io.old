@@ -10,7 +10,10 @@ export function sectionRenderer(section: any, index: number) {
     case 'sections.hero':
       return <Hero key={index} data={section} />
     case 'sections.50-50':
-      return <Hero5050 key={index} data={section} />
+      return [
+        <Hero5050 key={index} data={section} />,
+        <Hero5050 key={index} data={section} modalTest={true} />,
+      ]
     case 'sections.features':
       return <Features key={index} data={section} />
     case 'sections.testimonials-group':
