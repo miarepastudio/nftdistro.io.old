@@ -6,13 +6,11 @@ import { fetchAPI } from './utils/fetch-api'
 
 import { i18n } from '../../../i18n-config'
 import Banner from './components/Banner'
+import Header from './components/Header'
+import Backdrop from './components/Backdrop'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import { FALLBACK_SEO } from '@/app/[lang]/utils/constants'
-
-//new components
-import Header from './components/Header'
-import Backdrop from './components/Backdrop'
 
 async function getGlobal(): Promise<any> {
   const token = process.env.NEXT_PUBLIC_STRAPI_API_TOKEN
@@ -99,7 +97,7 @@ export default async function RootLayout({
           {children}
         </main>
 
-        <Banner data={notificationBanner} />
+        {/* <Banner data={notificationBanner} /> */}
 
         <Footer
           logoUrl={footerLogoUrl}

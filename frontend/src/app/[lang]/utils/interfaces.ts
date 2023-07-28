@@ -10,6 +10,22 @@ export interface ButtonInterface {
   setIsModalOpen?: any
 }
 
+export interface ButtonLinkInterface {
+  id: string
+  label: string
+  url: string
+  newTab: boolean
+}
+
+interface CardInterface {
+  id: string
+  picture: PictureInterface
+  title: string
+  profilePicture: PictureInterface
+  author: string
+  amount: number
+}
+
 interface PictureInterface {
   data: {
     id: string
@@ -53,4 +69,13 @@ export interface Hero5050 extends TextBlockInterface {
     picture: PictureInterface
   }
   modalTest?: boolean
+}
+
+export interface FeatureCardsInterface {
+  data: {
+    id: string
+    heading: string
+    link: ButtonLinkInterface
+    cards: CardInterface[]
+  }
 }
