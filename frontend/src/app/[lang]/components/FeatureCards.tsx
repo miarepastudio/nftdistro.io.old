@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 export default function FeatureCards({ data }: FeatureCardsInterface) {
   return (
-    <section className="container mx-auto px-6 pb-8 pt-8 sm:px-0 md:pt-0">
+    <section className="container mx-auto mb-8 mt-8 px-6 sm:px-0 md:mt-0">
       <div className="flex items-center justify-between">
         <h2 className="font-body text-2xl font-bold text-black md:text-4xl">
           {data.heading}

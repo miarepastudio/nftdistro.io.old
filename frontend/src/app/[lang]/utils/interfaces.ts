@@ -17,13 +17,21 @@ export interface ButtonLinkInterface {
   newTab: boolean
 }
 
-interface CardInterface {
+export interface CardInterface {
   id: string
   picture: PictureInterface
   title: string
   profilePicture: PictureInterface
   author: string
   amount: number
+}
+
+export interface UserInterface {
+  id: string
+  picture: PictureInterface
+  name: string
+  bid: number
+  rank: number
 }
 
 interface PictureInterface {
@@ -77,5 +85,13 @@ export interface FeatureCardsInterface {
     heading: string
     link: ButtonLinkInterface
     cards: CardInterface[]
+  }
+}
+
+export interface FeatureUsersInterface {
+  data: {
+    id: string
+    heading: string
+    users: UserInterface[]
   }
 }

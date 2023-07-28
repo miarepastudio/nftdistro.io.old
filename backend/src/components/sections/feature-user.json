@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_feature_users",
+  "info": {
+    "displayName": "Feature user"
+  },
+  "options": {},
+  "attributes": {
+    "users": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.user",
+      "max": 5
+    },
+    "heading": {
+      "type": "string"
+    }
+  }
+}

@@ -40,7 +40,8 @@
         "sections.features",
         "sections.heading",
         "sections.50-50",
-        "sections.feature-card-group"
+        "sections.feature-card-group",
+        "sections.feature-user"
       ],
       "pluginOptions": {
         "i18n": {

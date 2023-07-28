@@ -13,6 +13,14 @@ const populate = {
       buttons: {
         populate: true,
       },
+      users: {
+        populate: {
+          fields: ["heading"],
+          picture: {
+            fields: ["url", "alternativeText", "caption", "width", "height"],
+          },
+        },
+      },
       cards: {
         populate: {
           fields: ["title", "author", "amount"],

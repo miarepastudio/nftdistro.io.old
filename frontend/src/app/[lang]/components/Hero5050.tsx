@@ -8,7 +8,8 @@ import Modal from './Modal'
 
 export default function Hero5050({ data, modalTest }: Hero5050) {
   const imgUrl = getStrapiMedia(data.picture.data.attributes.url) || ''
-  const imgAlt = data.picture.data.attributes.url || 'missing alt text'
+  const imgAlt =
+    data.picture.data.attributes.alternativeText || 'missing alt text'
 
   // manage modal state
   const [isModalOpen, setIsModalOpen] = useState(false)
