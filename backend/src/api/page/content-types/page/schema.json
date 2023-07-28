@@ -41,7 +41,8 @@
         "sections.heading",
         "sections.50-50",
         "sections.feature-card-group",
-        "sections.feature-user"
+        "sections.feature-user",
+        "sections.mobile-app-banner"
       ],
       "pluginOptions": {
         "i18n": {

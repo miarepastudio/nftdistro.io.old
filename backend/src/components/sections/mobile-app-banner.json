@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_mobile_app_banners",
+  "info": {
+    "displayName": "Mobile app banner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

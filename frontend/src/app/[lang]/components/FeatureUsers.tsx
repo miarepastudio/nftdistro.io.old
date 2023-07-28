@@ -6,7 +6,6 @@ import { FeatureUsersInterface } from '../utils/interfaces'
 import { UserInterface } from '../utils/interfaces'
 
 export default function FeatureUsers({ data }: FeatureUsersInterface) {
-  console.log('DATA', { data })
   return (
     <section className="container relative mx-auto mb-10 mt-10 md:my-20">
       <div className="absolute mx-[calc(50%-50vw)] h-full w-screen bg-black"></div>
