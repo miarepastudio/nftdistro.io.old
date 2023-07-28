@@ -13,6 +13,20 @@ const populate = {
       buttons: {
         populate: true,
       },
+      cards: {
+        populate: {
+          fields: ["title", "author", "amount"],
+          picture: {
+            fields: ["url", "alternativeText", "caption", "width", "height"],
+          },
+          profilePicture: {
+            fields: ["url", "alternativeText", "caption", "width", "height"],
+          },
+        },
+      },
+      link: {
+        populate: true,
+      },
       feature: {
         populate: {
           fields: ["title", "description", "showLink", "newTab", "url", "text"],
@@ -39,7 +53,7 @@ const populate = {
   seo: {
     fields: ["metaTitle", "metaDescription"],
     populate: { shareImage: true },
-  }
+  },
 };
 
 module.exports = (config, { strapi }) => {

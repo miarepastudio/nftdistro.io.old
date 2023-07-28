@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_links_button_new_links",
+  "info": {
+    "displayName": "Button new link"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "newTab": {
+      "type": "boolean"
+    }
+  }
+}

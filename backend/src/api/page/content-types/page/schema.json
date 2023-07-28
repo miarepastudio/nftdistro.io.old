@@ -39,7 +39,8 @@
         "sections.lead-form",
         "sections.features",
         "sections.heading",
-        "sections.50-50"
+        "sections.50-50",
+        "sections.feature-card-group"
       ],
       "pluginOptions": {
         "i18n": {
