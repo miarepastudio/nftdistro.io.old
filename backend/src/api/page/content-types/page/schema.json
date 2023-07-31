@@ -42,7 +42,8 @@
         "sections.50-50",
         "sections.feature-card-group",
         "sections.feature-user",
-        "sections.mobile-app-banner"
+        "sections.mobile-app-banner",
+        "sections.explore-nft"
       ],
       "pluginOptions": {
         "i18n": {

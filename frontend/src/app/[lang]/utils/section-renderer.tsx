@@ -7,6 +7,7 @@ import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import Pricing from '../components/Pricing'
 import Email from '../components/Email'
+import ExploreNFT from '../components/nft/ExploreNFT'
 
 export function sectionRenderer(section: any, index: number) {
   switch (section.__component) {
@@ -18,6 +19,8 @@ export function sectionRenderer(section: any, index: number) {
       return <FeatureCards key={index} data={section} />
     case 'sections.feature-user':
       return <FeatureUsers key={index} data={section} />
+    case 'sections.explore-nft':
+      return <ExploreNFT key={index} dataStatic={section} />
     case 'sections.mobile-app-banner':
       return <MobileAppBanner key={index} data={section} />
     case 'sections.features':

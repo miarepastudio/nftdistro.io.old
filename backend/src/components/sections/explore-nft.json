@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_sections_explore_nfts",
+  "info": {
+    "displayName": "Explore NFT"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    }
+  }
+}

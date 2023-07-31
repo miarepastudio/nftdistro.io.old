@@ -1,23 +1,30 @@
 {
   "collectionName": "components_elements_cards",
   "info": {
-    "displayName": "Card"
+    "displayName": "Card",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "picture": {
-      "allowedTypes": ["images"],
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "title": {
       "type": "string",
       "required": true
     },
     "profilePicture": {
-      "allowedTypes": ["images"],
       "type": "media",
-      "multiple": false
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "author": {
       "type": "string",
@@ -25,6 +32,11 @@
     },
     "amount": {
       "type": "decimal"
+    },
+    "nft": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nft.nft"
     }
   }
 }
