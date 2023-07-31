@@ -24,7 +24,7 @@ export default function MobileAppBanner({ data }: any) {
           <Link
             href={data.url}
             target="_blank"
-            className="flex w-fit items-center gap-4 rounded-[1.25rem] border border-white bg-black px-8 py-4 font-body text-lg font-bold text-white md:px-14 "
+            className="flex w-fit items-center gap-4 rounded-[1.25rem] border border-white bg-black px-8 py-4 font-body text-lg font-bold text-white md:px-14"
           >
             <svg
               width="25"

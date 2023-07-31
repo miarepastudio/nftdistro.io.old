@@ -16,9 +16,17 @@
       "required": true
     },
     "avatar": {
-      "allowedTypes": ["images"],
+      "allowedTypes": [
+        "images"
+      ],
       "type": "media",
       "multiple": false
+    },
+    "nfts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::nft.nft",
+      "mappedBy": "creator"
     }
   }
 }

@@ -5,11 +5,10 @@ import { getStrapiMedia, getStrapiURL } from './utils/api-helpers'
 import { fetchAPI } from './utils/fetch-api'
 
 import { i18n } from '../../../i18n-config'
-import Banner from './components/Banner'
 import Header from './components/Header'
 import Backdrop from './components/Backdrop'
 import Footer from './components/Footer'
-import Navbar from './components/Navbar'
+import NewFooter from './components/NewFooter'
 import { FALLBACK_SEO } from '@/app/[lang]/utils/constants'
 
 async function getGlobal(): Promise<any> {
@@ -33,6 +32,8 @@ async function getGlobal(): Promise<any> {
       'footer.legalLinks',
       'footer.socialLinks',
       'footer.categories',
+      'footer.companyLinks',
+      'footer.creatorLinks',
     ],
   }
   return await fetchAPI(path, urlParamsObject, options)
@@ -78,13 +79,7 @@ export default async function RootLayout({
 
   return (
     <html lang={params.lang}>
-      <body className="mx-auto max-w-7xl">
-        {/* <Navbar
-          links={navbar.links}
-          logoUrl={navbarLogoUrl}
-          logoText={navbar.navbarLogo.logoText}
-        /> */}
-
+      <body className="   ">
         <Backdrop />
 
         <Header
@@ -97,16 +92,20 @@ export default async function RootLayout({
           {children}
         </main>
 
-        {/* <Banner data={notificationBanner} /> */}
+        <NewFooter
+          logoUrl={footerLogoUrl}
+          companyLinks={footer.companyLinks}
+          creatorLinks={footer.creatorLinks}
+        />
 
-        <Footer
+        {/* <Footer
           logoUrl={footerLogoUrl}
           logoText={footer.footerLogo.logoText}
           menuLinks={footer.menuLinks}
           categoryLinks={footer.categories.data}
           legalLinks={footer.legalLinks}
           socialLinks={footer.socialLinks}
-        />
+        /> */}
       </body>
     </html>
   )

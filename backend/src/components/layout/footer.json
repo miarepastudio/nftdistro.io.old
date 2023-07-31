@@ -30,6 +30,16 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::category.category"
+    },
+    "companyLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.link"
+    },
+    "creatorLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "links.link"
     }
   }
 }

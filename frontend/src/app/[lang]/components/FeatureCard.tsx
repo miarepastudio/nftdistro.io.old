@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { getStrapiMedia } from '../utils/api-helpers'
-import { CardInterface } from '../utils/interfaces'
 
 interface FeatureCard {
   attributes: {

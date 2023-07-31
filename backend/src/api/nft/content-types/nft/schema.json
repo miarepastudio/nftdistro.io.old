@@ -30,8 +30,9 @@
     },
     "creator": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::creator.creator"
+      "relation": "manyToOne",
+      "target": "api::creator.creator",
+      "inversedBy": "nfts"
     },
     "picture": {
       "type": "media",
