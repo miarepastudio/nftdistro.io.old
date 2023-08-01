@@ -21,27 +21,36 @@ export default function Button({
   isModalOpen,
   setIsModalOpen,
 }: ButtonInterface) {
-  return url ? (
-    <a
-      className="mt-14 w-fit rounded-[1.25rem] bg-gradient-135 from-pink to-orange px-14 py-4 font-body text-lg font-bold text-white"
-      href="#"
-    >
-      {label}
-    </a>
-  ) : (
-    type === 'modal' && (
-      <button
-        className={clsx(
-          'mt-14 flex w-fit items-center gap-4 rounded-[1.25rem] bg-gradient-135 px-14 py-4 font-body text-lg font-bold text-white',
-          gradients[color],
-        )}
-        onClick={() => setIsModalOpen(true)}
-      >
-        {showIcon && (
-          <Image src={icons[selectIcon]} alt="icon" width={17} height={17} />
-        )}
-        {label}
-      </button>
-    )
+  return (
+    <>
+      {url ? (
+        <a
+          className="mt-14 w-fit rounded-[1.25rem] bg-gradient-135 from-pink to-orange px-14 py-4 font-body text-lg font-bold text-white"
+          href="#"
+        >
+          {label}
+        </a>
+      ) : (
+        type === 'modal' && (
+          <button
+            className={clsx(
+              'mt-14 flex w-fit items-center gap-4 rounded-[1.25rem] bg-gradient-135 px-14 py-4 font-body text-lg font-bold text-white',
+              gradients[color],
+            )}
+            onClick={() => setIsModalOpen(true)}
+          >
+            {showIcon && (
+              <Image
+                src={icons[selectIcon]}
+                alt="icon"
+                width={17}
+                height={17}
+              />
+            )}
+            {label}
+          </button>
+        )
+      )}
+    </>
   )
 }

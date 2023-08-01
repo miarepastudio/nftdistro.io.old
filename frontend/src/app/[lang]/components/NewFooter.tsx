@@ -21,7 +21,7 @@ export default function NewFooter({
   return (
     <footer className="container relative z-10 mx-auto grid grid-cols-12 gap-y-8 px-6 pb-16 pt-5 sm:px-0 lg:pb-24">
       <div className="col-span-12 lg:col-span-4">
-        <Image src={logoUrl} alt="alt" width={107} height={33} />
+        <Image src={logoUrl || ''} alt="alt" width={107} height={33} />
         <p className="mt-8 font-display text-4xl font-medium text-black">
           NFT Distro
         </p>

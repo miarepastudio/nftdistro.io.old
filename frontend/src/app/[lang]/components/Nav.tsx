@@ -5,9 +5,9 @@ import { useEffect, useState, useRef } from 'react'
 import { clsx } from 'clsx'
 import { NavLinkInterface } from '../utils/interfaces'
 
-export default function Nav({ links }: NavLinkInterface[]) {
+export default function Nav({ links }: any) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const navRef = useRef(null)
+  const navRef: any = useRef(null)
 
   useEffect(() => {
     window.addEventListener('resize', () => {

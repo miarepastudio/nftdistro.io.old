@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 import { clsx } from 'clsx'
 
 export default function Modal({ isModalOpen, setIsModalOpen, modalTest }: any) {
-  const modalRef = useRef(null)
+  const modalRef: any = useRef(null)
 
   useEffect(() => {
     document.addEventListener('keydown', (e) => {

@@ -11,7 +11,7 @@ export default function TextBlock({
   isModalOpen,
   setIsModalOpen,
 }: TextBlockInterface) {
-  const Tag = headingTag
+  const Tag: any = headingTag
 
   return (
     <>
